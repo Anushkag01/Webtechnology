@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        img{
+            position: absolute; /* position: static; if you want to overlap it will 
+            never  happen if its position is static as by default its position is fixed ,you need to use 
+            position absolute*/
+            left: 0px;
+            top: 0px;
+            z-index: -1;/* if z-index=0 pic will overlap content instaed 
+            of content overlpping the image*/
+        }
+        p{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is z-index</h1>
+    <img src="https://picsum.photos/200"  alt="random pics">
+    <p>This is overlapping with an image</p>
+</body>
+</html>

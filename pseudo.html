@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <!--pseudo selector-->
+        <style>
+            a:link{
+                color:blue;
+            }
+            a:visited{
+                color:purple;
+            }
+            a:hover{
+                color:aquamarine;
+            }
+            a:active{
+                color:rgb(204,29,29);
+            }
+            p::first-letter
+            {
+                font-size: 30px;
+                color:blue;
+            }
+            p::first-line
+            {
+                color: blue;
+                background-color: lightblue;
+            }
+            p:last-child
+            {
+                background-color: yellow;
+            }
+            nav
+            ul
+            {
+                list-style-type:circle;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h2>linking</h2>
+        <a href="table.html">click Me for a html table</a>
+        <div>
+            <p>Welcome to Pesu</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Donec semper tellus a diam fermentum, ut euismod enim mattis.
+                Etiam felis dolor, porttitor eget porta vel, venenatis ac erat.
+                Sed laoreet dolor lacus, sed malesuada lectus eleifend in.
+            </p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="table1.html">Sports table</a></li>
+                <li><a href="table2.html">Vegetable and fruits</a></li>
+                <li><a href="form.html">form</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

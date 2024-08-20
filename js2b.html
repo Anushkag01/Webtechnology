@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <h1>Variable declaration</h1>
+        <script>
+            var a=20
+            document.write("A before value is: ",a +"<br>")
+            var a=30 //redeclaration and reassignment
+            document.write("A after value is: ",a+"<br>")
+            let x="hello world"
+            document.write("x before value is: ",x +"<br>")
+            //let x="hi" cannot redeclare 
+            x="hi" // YOU CAN  do reassignment
+            document.write("x after value is: ",x +"<br>")
+
+            //const b; not allowed (shows error)we have to initialize it!!
+            const b=true; //no reassignment and redeclaraction
+            document.write("b value is: ",b +"<br>")
+            let c; //allowed
+            let d=null
+            document.write("C is :",c+"<br>") // C is : undefined ---> this is the output
+            console.log(typeof(a))
+            console.log(typeof(x))
+            console.log(typeof(b))
+            console.log(typeof(c))
+            console.log(typeof(d))
+
+            let s="10"+100 // concatenats the whole thing so 10100
+            document.write("s is :",s+"<br>")
+
+            let s1="10"+100+200//10100200
+            document.write("s1 is :",s1+"<br>")
+
+            let s2=100+200+"10"//30010(basically 100+200) then makes it string
+            // then 300 and 10 conactenated as string 
+            document.write("s2 is :",s2+"<br>")
+
+            console.log(s==s1) //== comparision done and printed on console
+            console.log(s==s2)
+            console.log(s!=s2)
+            console.log(s===s1) // this also compares the eqaulity
+        </script>
+    </body>
+</html>

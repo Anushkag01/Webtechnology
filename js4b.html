@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <h1>For loop</h1>
+        <h2 id="p1"></h2>
+        <script>
+            /*
+            let t="";
+            for(let i=0;i<5;i++)
+        {
+            t+="the number is: "+i+"<br>" // 
+            document.getElementById("p1").innerHTML=t // so since i gave h2 id=p1 
+            // all the t elements printed with h2 tag font 
+
+            //t+= as we using h2 element so the whole string shld be stored 
+            //in t so that we see all values collectively
+        
+        }
+            */
+        let numbers=[10,40,60,80]
+        let t=""
+        let x;
+        for(x in numbers)
+        {
+            t="the numbers in array are:"+numbers[x]+"<br>"
+            document.write(t)
+        }
+        </script>
+    </body>
+</html>
