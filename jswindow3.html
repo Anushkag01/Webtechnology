@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>SetTimeout and clearTimeout</h1>
+        <p id="p1"></p>
+        <!-- here start button not required stop button is enough-->
+        <button onclick="stop()">Stop</button>
+        <script>
+            //so it prints just once 
+            //2seconds after we open window(as 2000 we get timer)
+            //so if u dont want it to print at all
+            //click stop before those 2 seconds or no. of secoonds u passed 
+            let x=setTimeout(start,2000)
+            function start()
+            {
+                document.getElementById("p1").innerHTML+="good afternoon"
+            }
+            function stop()
+            {
+                clearTimeout(x)
+            }
+        </script>
+    </body>
+</html>

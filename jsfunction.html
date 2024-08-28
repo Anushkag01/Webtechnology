@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <h1>Javascript Function</h1>
+        <script>
+            //function for multiplication
+            //defining function using function keyword
+            function mul(a,b)
+            {
+                return a*b;
+            }
+
+            function add(a,b)
+            {
+                return a+b;
+            }
+
+            //to define function using arrow expression
+            let z=(x,y)=> //can also be let sub=(x,y)=>
+            {
+                return(x-y);
+            }
+
+
+            let c=mul(3,8)
+            document.write("Multiplication of 2 numbers are: ",c,"<br>") 
+            //document.write("Multiplication of 2 numbers are: "+c )here + also works 
+            //+ will act as conactentaion
+            c=add(3,8)
+            document.write("Addition of 2 numbers are: ",c+"<br>") 
+
+            c=z(3,8)
+            document.write("Subtraction of 2 numbers are: ",c) 
+        </script>
+    </body>
+</html>

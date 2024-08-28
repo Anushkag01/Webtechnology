@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h1>SetInterval and ClearInterval</h1>
+        <button onclick="start()">start</button>
+        <button onclick="stop()">stop</button>
+        <p id="p1"></p>
+        <script>
+            var x;
+            function start()
+            {
+                x=setInterval(function()
+                {
+                    document.getElementById("p1").innerHTML+="hello"
+                },2000) //2000->2seconds
+                //setInterval takes two parameter
+                //first parameter is function 
+                //second will be timing
+            }
+            function stop()
+            {
+                clearInterval(x)
+            }
+        </script>
+    </body>
+</html>

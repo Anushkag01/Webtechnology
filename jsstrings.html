@@ -1,0 +1,51 @@
+<html>
+    <body>
+        <h1> String methods</h1>
+        <script>
+            let text="Hello PESU"
+            document.write("The text is:"+text+"<br>")
+            document.write("CharAt for index 4: "+text.charAt(4)+"<br>")
+            //here index return character present at the index provided
+            document.write("Index :"+text[4]+"<br>") 
+            //charcode--ascii value
+            document.write("CharCoodeAt for index  0: "+text.charCodeAt(0)+"<br>")
+
+            let x=text.slice(1,4)
+            document.write("Slice (1,4): "+x+"<br>")
+            let y=text.substring(1,4)
+            document.write("Substring (1,4): "+y+"<br>")
+            let z=text.substr(1,4) //1st n0. is strating index and 2nd no->length
+            //so 1,4 -->at index 1 is e and length 4 so ello 
+            document.write("Substr (1,4): "+z+"<br>")
+
+            z=text.substr(2,2)
+            document.write("Substr (2,2): "+z+"<br>")
+            // so 2,2 at index 2 is l and 2 is length as well so ll
+
+            //negative index only works with slice and substr
+            x=text.slice(-3)
+            document.write("Slice (-3): "+x+"<br>")
+            y=text.substring(-3)
+            document.write("Substring (-3): "+y+"<br>")
+            z=text.substr(-3)
+            document.write("Substr (-3): "+z+"<br>")
+
+
+            let text1="RR_Campus"
+            document.write("Text 1 is : "+text1+"<br>")
+            document.write("concat text and text1: "+text.concat(text1)+"<br>")
+            document.write("toLowerCase: "+text.toLowerCase()+"<br>")
+            document.write("toUpperrCase: "+text.toUpperCase()+"<br>")
+            
+            //so split wherever space is presnt it puts comma
+            document.write("split: "+text.split(" ")+"<br>")
+
+            // so here wherever l is present it replace those l by comma
+            document.write("split: "+text.split("l")+"<br>")
+
+            document.write("split: "+text.split("")+"<br>")
+            //here all comma separeted
+
+        </script>
+    </body>
+</html>

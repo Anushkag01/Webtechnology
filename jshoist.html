@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h2>Hoistng in Javascript</h2>
+        <p> Moving the functions and variables to 
+            the top of current scope
+        </p>
+        <script>
+            x=10
+            document.write("x is:",x) 
+            //will print 10 as 
+            //moves the variable to the top of current scope
+            var a=20;
+            function hoist()
+            {
+                if(true)
+            {
+                var a=10
+            }
+            console.log("a is :",a) //show a is:undefined when if(false)
+            }
+            hoist()
+        </script>
+    </body>
+</html>

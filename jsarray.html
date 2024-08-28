@@ -1,0 +1,54 @@
+<html>
+    <body>
+        <h1>Array Methods</h1>
+        <p> Array is list of elements </p>
+        <script>
+            const cars=['Ferrari',45,"Williams",22,"Mclaren","Mercedes"];
+            let nums=[10,20,30]
+            //const cars=['Ferrari',45,"Williams",22,"Mclaren",,"Mercedes"];
+            // , , when nothing is given it is also included!!
+            // length =7! and we can give heterogenous data
+            let c=cars.length
+            document.write("length:",c,"<br>")
+            //you need to reassign c after pushing or popping
+            //doesnt automatically change!!
+
+            console.log("before push:",cars)
+            //before push: (7) ['Ferrari', 45, 'Williams', 22, 'Mclaren', empty, 'Mercedes']
+
+
+            cars.push("RED BULL") //inserting at end
+            console.log("after push:",cars)
+            cars.unshift(100)//insert from front
+            console.log("after unshift: ",cars)
+
+            cars.pop()//deltes at end
+            console.log("afetr pop:",cars)
+            cars.shift()//deletes at front 
+            console.log("afetr shift:",cars)
+
+            let a=cars.join('*')//instaed of ',' it joins elements with '*
+            document.write("after join: ",a, "<br>");
+
+            a=cars.slice(1,3)
+            document.write("<br>"," after slice : ",a)
+
+            a=cars.indexOf("Mclaren")
+            document.write("<br>"," INDEX OF Mclaren :",a,"<br>")
+
+            a=cars.sort()
+            document.write("After sorting: ",a,"<br>")
+
+            //splice used for adding or delteing a particular elemenet at a given position
+            a=cars.splice(2,1,"HELLO","HI") // second no. for deleteing first no. of elements and then at its place it adds hello and hi
+            document.write(" After splice 2,1 :",cars,"<br>") 
+            //so 2,1-->will delete one element from index 2 and at index 2 adds "hello","hi"
+            //
+            a=cars.splice(2,1)
+            document.write(" After splice 2,1 :",cars,"<br>")
+            let b=cars.concat(nums)
+            document.write("Merging two arrays ",b)
+
+        </script>
+    </body>
+</html>
