@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>Object Constructor</h1>
+        <script>
+            function Employee(fname,lname)
+            {
+                this.firstName=fname;
+                this.lastName=lname;
+                this.showName=function ()
+                {
+                    alert(this.firstName+" "+this.lastName);
+                };
+            }
+            var emp5=new Employee("Anushka","Gupta");
+            emp5.showName();
+        </script>
+    </body>
+</html>

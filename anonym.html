@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1>Object-Anonymous function</h1>
+        <script>
+            var emp6=new function()
+            {
+            this.firstName="Aruna";
+            this.lastName="Srinivasan";
+            this.showName=function(){
+                    alert(this.firstName+" "+this.lastName);
+                }
+            };
+            emp6.showName();
+        </script>
+    </body>
+</html>
